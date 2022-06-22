@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+:root {
+    --color1: #f1c40f;
+    --color2: #2c3e50;
+    --color3: #e74c3c;
+}
+
+body {
+    background-color: var(--color2);
+}
+
+h1, li {
+    color: white;
+}
+
+h2 {
+    background-color: var(--color1);
+    border: 2px solid black;
+}
+
+h3 {
+    color: var(--color1);
+}
+
+.astronomy-class {
+    color: var(--color3);
+}

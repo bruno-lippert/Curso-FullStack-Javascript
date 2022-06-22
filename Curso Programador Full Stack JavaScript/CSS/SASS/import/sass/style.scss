@@ -1,0 +1,7 @@
+// Import colors
+@import "colors/colors.scss";
+
+// Import Home
+@import "pages/home.scss";
+
+/* Se colocar o import da home por primeiro as cores não serão carregadas pois existe uma hierarquia */

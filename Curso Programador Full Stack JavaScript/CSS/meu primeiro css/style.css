@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+body {
+    background-image: url('images/20200527123558_1200_675_-_falcon_9_e_crew_dragon.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    color: purple;
+    border: 8px solid yellow;
+}
+
+li {
+    color: green;
+}

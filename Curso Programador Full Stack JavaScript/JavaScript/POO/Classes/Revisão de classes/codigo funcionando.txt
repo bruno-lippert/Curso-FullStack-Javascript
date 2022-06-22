@@ -1,0 +1,119 @@
+class Spaceship {
+    constructor (name, crewQuantity){
+        this.name = name
+        this.crewQuantity = crewQuantity
+        this.currentVelocity = 0
+    }
+}
+
+class typeSpaceship extends Spaceship {
+    constructor (name, crewQuantity, typeSpaceship){
+        super(name, crewQuantity)
+        this.typeSpaceship = typeSpaceship
+    }
+}
+
+class battleShip extends typeSpaceship {
+    constructor(name, crewQuantity, typeSpaceship, weaponsAvailable){
+        super(name, crewQuantity, typeSpaceship)
+        this.weaponsAvailable = weaponsAvailable
+    }
+}
+
+class transportShip extends typeSpaceship {
+    constructor(name, crewQuantity, typeSpaceship, crewCapacity){
+        super(name, crewQuantity, typeSpaceship)
+        this.crewCapacity = crewCapacity
+    }
+}
+
+// --------------------------------------------- funções ------------------------------------------
+
+ spaceshipData(){
+    spaceship.name = prompt("Digite o nome da nave")
+    spaceship.crewQuantity = prompt("Digite a quantidade de tripulantes")
+}
+
+ typeShip(){
+    let type = prompt("Insira o tipo da nave\n1 - Nave de batalha\n2 - Nave de transporte")
+    return type
+}
+
+ crewCapacity(){
+    let capacity = prompt("Capacidade de tripulantes")
+    let spaceship = new transportShip(capacity)
+    return spaceship
+}
+
+ weaponsAvailable(){
+    let weapons = prompt("Quantidade de armas disponíveis")
+    let spaceship = new battleShip(weapons)
+    return spaceship
+}
+
+ menu(){
+    let opt
+    while (opt != "1" && opt != "2" && opt != "3"){
+        opt = prompt("1- Acelerar a nave\n2- Trocar a Nave\n3- Imprimir e sair")
+        return opt
+    }
+    
+}
+
+ speedUp(acceleration){
+    spaceship.currentVelocity += acceleration * (1 - 0.17)
+}
+
+ _stop(){
+    alert("Nome: " + spaceship.name + "\nQuantidade de tripulantes: " + spaceship.crewQuantity + "\nVelocidade atual: " + spaceship.currentVelocity)
+}
+
+// ------------------------------------------------------------------------------------------------
+
+let spaceship = new Spaceship()
+let typespaceship = new typeSpaceship()
+let battleship = new battleShip()
+let transportship = new transportShip()
+
+spaceshipData()
+let type = typeShip()
+
+if( type == "1"){
+    typespaceship.typeSpaceship = "Nave de batalha"
+    weaponsAvailable()
+} else if(type == "2"){
+    typespaceship.typeSpaceship = "Nave de transporte"
+    crewCapacity()
+}
+
+let opt
+while (opt != "3"){
+    opt = menu()
+    switch(opt){
+        case "1":
+            let acceleration = prompt("Quanto você quer acelerar?")
+            speedUp(acceleration)
+            break
+        case "2":
+            spaceship.currentVelocity = 0
+            spaceshipData()
+            typeShip()
+            if( type == "1"){
+                typespaceship.typeSpaceship = "Nave de batalha"
+                weaponsAvailable()
+            } else if(type == "2"){
+                typespaceship.typeSpaceship = "Nave de transporte"
+                crewCapacity()
+            }
+            break
+        case "3":
+            _stop()
+            break
+    }
+
+}
+
+
+console.log(spaceship)
+
+console.log(typespaceship)

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de cadastro de imoveis</title>
+    <script src="../js/aplicacao.js"></script>
+    <script src="../js/imovel.js"></script>
+    <script src="../js/index.js"></script>
+</head>
+<body>
+    <h3>Cadastro de imóvel</h3>
+
+    <form>
+        <p>
+            <label>Tipo: </label>
+            <input type="radio" name="tipo" id="casa" value="Casa">
+            <label for="casa">Casa</label>
+            <input type="radio" name="tipo" id="apartamento" value="Apartamento">
+            <label for="apartamento">Apartamento</label>
+        </p>
+        <p>
+            <label for="area_casa">Área</label>
+            <input type="text" name="area_casa" id="area_casa">
+        </p>
+        <p>
+            <label>Está alugado?</label>
+            <input type="radio" id="s" name="alugado" value="Sim">
+            <label for="s">Sim</label>
+            <input type="radio" id="n" name="alugado" value="Não">
+            <label for="n">Não</label>
+        </p>
+
+        <br><br>
+
+        <button type="button" onclick="aplication.submitForm()">Enviar</button>
+        <button type="button" onclick="aplication.cleanForm()">Limpar</button>
+    </form>
+
+    <ul id="list">
+
+    </ul>
+</body>
+</html>

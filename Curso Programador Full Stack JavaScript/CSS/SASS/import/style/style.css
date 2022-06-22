@@ -1,0 +1,16 @@
+@charset "UTF-8";
+.textBuy {
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ff4043;
+}
+
+.btn {
+  padding: 10px 15px;
+  border: 1px solid red;
+  background-color: #ff4;
+}
+
+/* Se colocar o import da home por primeiro as cores não serão carregadas pois existe uma hierarquia */
+
+/*# sourceMappingURL=style.css.map */
