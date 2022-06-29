@@ -1,0 +1,54 @@
+FLEXBOX
+
+HTML de exemplo:
+<main class="container">
+	<div class="bloco-1">1</div>
+	<div class="bloco-2">2</div>
+	<div class="bloco-3">3</div>
+</main>
+
+O 'display: flex;' vai sempre no elemento pai. Que é a class container
+
+flex-direction - define qual vai ser o eixo principal do elemento, vertical ou horizontal
+variantes: row, row-reverse, column, column-reverse
+
+justify-content - alinha os elementos ao longo do eixo principal
+variantes: flext-start, flex-end, felx-center, sapce-between, space-around
+
+align-items - alinha os elementos no eixo perpendicular(contrario do eixo principal)
+variantes: flex-start, flex-end, center, stretch(faz com que ocupe todo espaço do elemento caso não tenha uma altura pré-determinada definida),
+baseline(alinha todos os elementos com base do conteudo dentro da tag)
+
+flex-wrap - qubra linhas caso não caiba tudo em uma linha só. Por padrão vem com o valor nowrap
+variantes: nowrap, wrap, wrap-reverse(em vez da linha quebrar pra baixo quebra pra cima)
+flex-flow(é uma shorthand de felx-direction + flex-wrap)
+
+align-content - alinha elementos em mais de uma linha, sempre quando estamos utilizando o wrap
+variantes: flext-start, flex-end, felx-center, sapce-between, space-around
+
+gap, row-gap, column-gap - define um espaçoe entre os elementos
+
+
+----------------------------------- Estilizando os filhos --------------------------------------------------
+Propriedades
+
+order - faz com que podemos olocar na ordem que quisermos. Por padrão vem com o valor 0, ai seguem a ordem que
+botamso no HTML, então se eu botar o valor 1 em um elemento ele vai para o final pois o valor 1 é maior ue 0,
+seguindo essa lógica podemos organizar todos os elementos filhos. É possivel utilizar numeros negativos.
+Pode ser usado com classes. Se usarmos duas classes com o mesmo valor os elementos ficam na ordem que estão no
+HTML.
+
+flex-grow - é a habilidade dos itens crescerem. Se houver um espaço sobrando vai dar a oportunidade daquele elemento crescer. Usamos numeros para
+definir o quanto vão crescer, que é mais uma medida de proporção
+
+flex-shrink - é a habilidade dos itens de incolherem. Tenque ter um 'main' pré-definido e o flex-wrap deve estar com propriedade nowrap para o item
+não quebrar de linha
+
+flex-basis - define o tamanho dos itens em largura e altura. Por padrão tem a propriedade 'auto'. Podemos passa a propriedade como proporção ou com
+unidades de media(como px) 
+
+flex - é uma shorhand de flex-grow, flex-shrink e flex-basis.
+Ex: flex: 0, 1, auto;
+
+align-self - é uma propriedade que você usa para mudar a posição no eixo perpendicular só daquele elemento, você define a posição(flext-start, flex-end, felx-center)
+e o resto fica conforme o elemento pai definiu
