@@ -1,0 +1,25 @@
+Ele facilita a escrita do código CSS podendo aninhar os seletores que nem no HTML
+Ex:
+	.class1{
+		
+			ul {
+				backgound-color: red;
+			}
+			li {
+				background-color: blue;
+			}
+
+		}
+
+Da para usar o '&' para criar pseudo-classes e pseudo-elementos
+Ex:
+	.class1{
+		
+			button {
+				backgound-color: red;
+			}
+			&:hover {
+				background-color: blue;
+			}
+
+		}

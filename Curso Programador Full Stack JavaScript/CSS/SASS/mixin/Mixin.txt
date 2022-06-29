@@ -1,0 +1,12 @@
+Mixin serve para encurtar o tamanho do código, fazendo com que  o que você escreveria em várias linhas, escrever só em uma
+Ex: 
+	@mixin text-style($color, $font-size) {
+		color: $color;
+		font-size: $font-size;
+	}
+
+	.tetx{
+		h1{
+			@include text-style(#ff4043, 34px);
+		}
+	}

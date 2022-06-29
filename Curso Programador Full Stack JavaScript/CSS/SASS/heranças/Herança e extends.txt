@@ -1,0 +1,25 @@
+Herança é usada junto com o nesting, para usa-lo devemos usar o '&' e logo depois a classe ou id que queremos modificar
+Extend usamos quando queremos importar propriedades de outro elementos usando o @extend e logo depois o elemento classe ou id de onde você quer importar
+Ex:
+	.btn {
+    width: 125px;
+    padding: 10px 0px;
+    border-radius: 20px;
+    display: block;
+    margin-top: 10px;
+
+    &.btn-amarelo {
+        background-color: yellow;
+    }
+    &.btn-azul{
+        background-color: blue;
+        color: white;
+    }
+}
+
+.btn-roxo {
+    @extend .btn;
+    background-color: purple;
+    color: white;
+}
+
