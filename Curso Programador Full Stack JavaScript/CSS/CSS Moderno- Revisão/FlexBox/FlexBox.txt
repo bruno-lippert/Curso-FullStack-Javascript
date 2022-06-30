@@ -13,10 +13,10 @@ flex-direction - define qual vai ser o eixo principal do elemento, vertical ou h
 variantes: row, row-reverse, column, column-reverse
 
 justify-content - alinha os elementos ao longo do eixo principal
-variantes: flext-start, flex-end, felx-center, sapce-between, space-around
+variantes: flext-start, flex-end, felx-center, sapce-between, space-around, space-evenly(divide igualmente o espaçamento entre cada item)
 
 align-items - alinha os elementos no eixo perpendicular(contrario do eixo principal)
-variantes: flex-start, flex-end, center, stretch(faz com que ocupe todo espaço do elemento caso não tenha uma altura pré-determinada definida),
+variantes: flex-start, flex-end, center, stretch(faz com que ocupe todo espaço do elemento caso não tenha uma altura ou largura pré-determinada definida),
 baseline(alinha todos os elementos com base do conteudo dentro da tag)
 
 flex-wrap - qubra linhas caso não caiba tudo em uma linha só. Por padrão vem com o valor nowrap
