@@ -27,6 +27,8 @@ header {
 
 .suport {
     margin-right: 50px;
+    display: flex;
+    column-gap: 15px;
 }
 
 .suport-content {
