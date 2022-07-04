@@ -13,7 +13,7 @@ flex-direction - define qual vai ser o eixo principal do elemento, vertical ou h
 variantes: row, row-reverse, column, column-reverse
 
 justify-content - alinha os elementos ao longo do eixo principal
-variantes: flext-start, flex-end, felx-center, sapce-between, space-around, space-evenly(divide igualmente o espaçamento entre cada item)
+variantes: flext-start, flex-end, flex-center, sapce-between, space-around, space-evenly(divide igualmente o espaçamento entre cada item)
 
 align-items - alinha os elementos no eixo perpendicular(contrario do eixo principal)
 variantes: flex-start, flex-end, center, stretch(faz com que ocupe todo espaço do elemento caso não tenha uma altura ou largura pré-determinada definida),

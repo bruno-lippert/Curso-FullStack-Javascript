@@ -1,18 +1,33 @@
-* {
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
 header, footer {
+    border: solid 2px black;
     text-align: center;
-    }
+}
 
-.divs {
+main {
+    background-color: gray;
+    padding:30px 0px 30px 0px;
+}
+
+.container {
     display: flex;
-    align-self: start
-    }
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px 25px;
+}
 
 .videos-box {
-    
-    }
+    width: 500px;
+    height: 300px;
+    border: solid 2px black;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
