@@ -1,0 +1,7 @@
+display: grid; -> quando o declaramos ele procura preencher toda a tela
+
+grid-template-columns: 25% 50% 25%(exemplo) -> define o tamanho das colunas e a quantidade. Outra unidade de medida usada são os frames(fr). Outro jeito de declararmos é usando o repeat, mas a desvantagem é que conseguiremos apenas deixar todas as colunas com o mesmo temanho. Ex: grid-template-columns: repeat (3, 1fr), são 3 linhas com o mesmo tamanho. O mesmo se aplica ao grid-template-rows
+
+grid-auto-rows: minmax(210px, 100%) -> delimita uma altura minima e maxima da linha
+
+gap -> igual ao flexbox
