@@ -9,3 +9,11 @@ gap -> igual ao flexbox
 grid-column -> define em que linha(as linhas se contam verticalmente) a coluna começa e em q linha ela termina. Ex: 1/4, começa na linha 1 e vai até a 4
 
 grid-row -> altera da mesma forma que o grid-column, só que em linhas. (as linhas se contam horizontalmente)
+
+grid-template-areas -> usado para organizar o conteudo dentro do grid.
+Ex: "item1 item2 item3"
+    "item4 item4 item4"
+    "item5 item5 item6"
+    e depois colocando cada item em sua devida classe com grid-area
+
+    Na questão de responsividade usamos o media-query.
