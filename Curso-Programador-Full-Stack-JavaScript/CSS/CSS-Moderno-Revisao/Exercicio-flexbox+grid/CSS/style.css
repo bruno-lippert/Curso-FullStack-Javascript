@@ -75,6 +75,10 @@ a:hover {
   cursor: pointer;
 }
 
+.main-card {
+  width: 350px;
+}
+
 .main-images {
   width: 350px;
   min-height: 240px;
