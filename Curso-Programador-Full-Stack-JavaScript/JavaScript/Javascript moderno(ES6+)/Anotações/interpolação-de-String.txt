@@ -1,0 +1,7 @@
+A interpolação subistitui a concatenação. Ex:
+
+let spaceshipName = "Colossus"
+
+console.log('Nome da nave: ${spaceshipName}')
+
+também é possivel utilizar números e fazer uma operação matemática
