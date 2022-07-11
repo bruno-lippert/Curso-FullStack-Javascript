@@ -1,0 +1,5 @@
+ECMAScript é o nome oficial do JS
+
+As versões já lançadas dos navegadores nunca conseguirão suportar as versões mais novas do JS
+Com isso surge a necessidade de ferramentas que convertam para as versões do JS - Que possibilitem que nós, desenvolvedores possamos utilizar as versões mais recentes, que não impeça o código de executar em navegadores que ainda não suportam
+Uma ferramenta que auxilia a ver como estão a evolução dos navegadores - caniuse.com
