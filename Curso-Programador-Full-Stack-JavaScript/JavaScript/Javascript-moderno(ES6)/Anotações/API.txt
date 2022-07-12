@@ -1,0 +1,14 @@
+É um meio pelo qual dois sistemas se comunicam, um consegue utilizar funcionalidades do outro epermite a um sistema enviar e receber dados. Podemos ter também a importação de uma biblioteca de outro sistema e quando estamos consumindo metodos e funções daquele sistema, estamos na verdade consumindo a API dele
+
+API - Application Programming Interface (Interface de Programação de Aplicações)
+
+Por exemplo, quando retiramos dinheiro no caixa eletrônico, ele consome uma API q o conecta com sua conta
+
+Com a Internet, novos tipos de APIs surgiram. A mais utilizada hoje é REST API. Ela é feita sobre o protocolo HTTP
+Da mesma forma que requisitamos páginas web pelo browser, podemos tabém solicitar recursos através de APIs RESTful
+APIs RESTful é uma API que obedece o padrão REST
+
+REST - Representational State Transfer (Transferência de Estado Representacional). Ele é um modelo que consiste em regras e padrões e permitem a criação de APIs bem definodas. Como funciona sobre o HTTP, utiliza seus verbos de acesso: GET, POST, PATCH/PUTe DELETE
+
+Quando digitamos uma URL no navegador, estamos fazendo uma requisição, ela nso retorna uma página web que é uma requisição HTTP
+Para APIs eambém fazemos uma requisição para uma URL, mas não nos retorna uma página e sima dados: JSON, XML, etc.
