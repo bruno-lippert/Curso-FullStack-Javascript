@@ -1,0 +1,4 @@
+É um interpretador de código Javascript
+Ele permite criarmos códigos que serão executados fora do browser
+Seja no terminal, backend, etc.
+conseguimos utilizar tudo que aprendemos sobre JS
