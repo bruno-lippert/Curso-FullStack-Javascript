@@ -1,0 +1,20 @@
+JSON é um formato de representação de daods no formato texto, é derivado da forma como os objetos do JS são organizados
+Diferentes sistemas precisam se comunicar e é necessário que exista um padrão para que possam mandar dados um para o outro
+
+Pode ser um texto salvo num arquivo, geralmente em um arquivo com formato .json ou pode ser uma string
+
+exemplo de objeto .json:
+let planet_json = {
+    "name": "Terra",
+    "physicalCharacteristics": {
+        "surfaceArea": 510072000,
+        "equatorialDiameter": 12756.2
+    },
+    "colors": ["Azul","Branco", "Marrom"],
+    "startRotation": "00:00",
+    "finishRotation": "23:59"
+}
+
+Para converter o planet_json que está em texto em um objeto no JS devemos usar uma função da classe JSON que é a função 'parse':
+
+let planet = JSON.parse(planet_json)
