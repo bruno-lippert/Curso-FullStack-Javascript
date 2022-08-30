@@ -1,0 +1,3 @@
+npm init para iniciar o npm
+
+nom install moment --save -> para instalar um biblioteca que nesse caso eh a biblioteca moment e o --save é para dizer que o projeto é dependente daquela biblioteca
