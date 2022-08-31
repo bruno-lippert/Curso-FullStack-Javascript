@@ -1,0 +1,18 @@
+Transpilar é converter um código que está numa linguagem para outra
+Babel é utilizado para isso - converte o código em uma versão ECMA para outras versões anteriores
+Utilizado para permitir compatibilidade com navegadores que ainda não suportam determinada versão
+
+npm install @babel/core @babel/cli @ babel/preset-env --save-dev
+cada @ é um pacote a ser instalado do babel
+@babel/core é a base para o bable funcionar
+@babel/cli é para conseguirmos utilizar o bable por linha de comando
+@babel/preset-env é um pacote para converter qualquer versão do ES6 ou superior para o ES5
+--save-dev inclui o pacote que instalamos apenas no dev-dependences do package.json
+
+para coverter um arquivo para um versão anterior do ECMAScript
+npx babel "nome do arquivo"
+para salvar em outro arquivo:  npx babel "nome do arquivo original" -o "nome do arquivo compilado"
+para converter aportando uma versão - npx babel "nome do arquivo original" -o "nome do arquivo compilado" --presets=@babel/preset-env(versão ES5)
+
+da para transpilar um diretório inteiro e mandar ele salvar em um outro diretório
+npx bable "nome do diretório/pasta" --out-dir "nome do diretorio compilado" --presets=@babel/preset-env
