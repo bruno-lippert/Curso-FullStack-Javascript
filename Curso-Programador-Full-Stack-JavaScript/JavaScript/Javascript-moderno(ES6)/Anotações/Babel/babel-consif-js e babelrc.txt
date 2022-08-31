@@ -1,0 +1,15 @@
+Babel 7 foi lançado em 2018
+Antes possuia como arquivos de configuração apenas o .babelrx
+no 7, passou a ser recomendada a utilização do babel.config.js
+
+babel.config.js
+-é um arquivo javascript
+-é utilizado na Raiz do projeto para as configurações padrões
+
+.babelrx
+-é um arquivo JSON
+-é utilizado em subdiretórios para sobrescrever os valores padrões que vem no babel.config,js
+
+babel.config.js  .babelrx
+-configuramos os presets, plugins e etc.
+-lido no momento de converter os arquivos
