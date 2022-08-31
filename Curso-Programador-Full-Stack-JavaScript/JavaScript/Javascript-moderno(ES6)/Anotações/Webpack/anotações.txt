@@ -1,0 +1,1 @@
+Webpack básicamente junta todos os arquivos javascript, css, imagens e etc, em um único arquivo para colocar no site em produção, melhorando o desempenho site  através da minificação e acoplamento de tudo, além de deixar mais "clean" o HTML, pois a única referencia que terá no HEAD será o arquivo com tudo incluso, padronizado como "main.js".
