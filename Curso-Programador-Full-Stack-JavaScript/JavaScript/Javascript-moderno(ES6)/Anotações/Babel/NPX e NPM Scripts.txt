@@ -1,4 +1,0 @@
-podemos criar atalhos para comandos no babel, como transpilar arquivos, por exemplo
-no arquivos package.JSON que o babel cria podemos adicionar um atalho na propriedade "scripts" adicionando a chave do atalho e o comando, por exemplo:
-"build" : "npx babel index.js -o transpiled.js"
- e para executar esse comando no terminal usamos: npm run build
