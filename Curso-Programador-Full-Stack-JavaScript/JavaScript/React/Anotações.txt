@@ -33,5 +33,8 @@ DOM - É um objeto/interface criado pelo Browser que representa a estrututa do n
 Virtual DOM - É uma representação em JS do DOM verdadeiro. Quando alteração e eventos acontecem, primeiro o React atualiza o Virtual DOM, analisa as mudanças e o que precisa ser atualizado no DOM, e depois realiza isso conciliando o Virtual Dom e o DOM
 
 npx create-react-app 'nome do arquivos' - para criar um app react
-npm start - para enxergar o projeto no navegador, vai subir o servidor
+npm start - faz o projeto rodar localmente no seu computador
 npm build - para transpilar tudo em HTML, CSS e JS
+
+import React, {fragment} from 'react'; -> dentro das chaves são bibliotecas sendo exportadas
+O fragment serve para que aundo você não queira retornar uma div no seu component, ai você uma <fragment></fragment> em vez de div, eve ser usado pois se retornar elementos diferentes da erro
