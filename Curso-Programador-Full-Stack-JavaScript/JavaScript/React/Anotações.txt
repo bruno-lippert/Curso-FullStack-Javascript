@@ -1,0 +1,27 @@
+O que é o React? 
+É uma biblioteca JavaScript declarativa, eficiente e flexível a criação de interfaces de usuário(UI)
+
+Características:
+- é uma Bibliotecan não um framework
+- é baseado em Components
+-é usado para criar SPAs(Aplicativo de página única) - site que consiste de uma única página web com o objetivo de fornecer uma experiência do usuário similar à de um aplicativo desktop.
+
+
+O que são components e porque eles são importantes
+Os components permitem dividir a Interface do Usuário em partes independentes e reutilizáveis, são como funções do JS
+Dois tipos de Componentes: Função e classe
+
+
+O que é Jsx
+Ex de JSX:
+const element = <h1 className="title"> Hello world!</h1>
+- JSX não é interpretado pelo browser, por este motivo devemos utilizar um transpíler(em geral o babel) para realizar essa transpilação
+- Ao contrário do passado, em vez de colocar JavaScript em HTML, o JSX nos permite colocar HTML em JS
+
+Após o transpiler o código ficara assim:
+const element = React.createElement(
+    "h1",
+    { className: "title" },
+    "Hello world!"
+)
+Com esse código preparamos nosso elemento para ser exibido no DOM
