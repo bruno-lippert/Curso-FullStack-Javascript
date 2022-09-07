@@ -25,3 +25,9 @@ const element = React.createElement(
     "Hello world!"
 )
 Com esse código preparamos nosso elemento para ser exibido no DOM
+
+
+Como o React atualiza as views
+DOM - É um objeto/interface criado pelo Browser que representa a estrututa do nosso documento HTML e que nos dá meios para interagir com ele
+
+Virtual DOM - É uma representação em JS do DOM verdadeiro. Quando alteração e eventos acontecem, primeiro o React atualiza o Virtual DOM, analisa as mudanças e o que precisa ser atualizado no DOM, e depois realiza isso conciliando o Virtual Dom e o DOM
