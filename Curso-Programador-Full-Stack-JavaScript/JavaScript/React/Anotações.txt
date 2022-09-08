@@ -38,3 +38,24 @@ npm build - para transpilar tudo em HTML, CSS e JS
 
 import React, {fragment} from 'react'; -> dentro das chaves são bibliotecas sendo exportadas
 O fragment serve para que aundo você não queira retornar uma div no seu component, ai você uma <fragment></fragment> em vez de div, eve ser usado pois se retornar elementos diferentes da erro
+
+Conhecendo as preparamos
+Props = Propriedades
+
+Função pura:
+Ex:
+function sum(a, b) {
+    return a + b;
+}
+- A função recebe duas propriedades a e babel
+- A função não altera o valor das entradas
+- Sempre retorna o mesmo resultado para os mesmos tipos de entrada
+
+Função impura
+Ex:
+function withdraw(account, amount){
+    account.total -= amount;
+}
+- A função altera o valor de sua entrada
+
+- Todos os componentes React tem que agir como funções puras em relação ao seus props
