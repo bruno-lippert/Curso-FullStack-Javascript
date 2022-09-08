@@ -59,3 +59,6 @@ function withdraw(account, amount){
 - A função altera o valor de sua entrada
 
 - Todos os componentes React tem que agir como funções puras em relação ao seus props
+
+Eventos - https://reactjs.org/docs/handling-events.html
+
