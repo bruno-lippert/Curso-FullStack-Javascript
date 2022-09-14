@@ -62,3 +62,56 @@ function withdraw(account, amount){
 
 Eventos - https://reactjs.org/docs/handling-events.html
 
+Renderização condicional - Em React, você pode criar componentes distintos que encapsulam o comportamento que você precisa. Então, você pode renderizar apenas alguns dos elementos, dependendo do estado da sua aplicação. Renderização condicional em React funciona da mesma forma que condições funcionam em JavaScript.
+
+Condicional no css: className={props.gray ? 'grau-img' : 'color-img'}
+
+No JSX podemos passar funções como variáveis
+Ex sem parametro:
+function gteCompanyName() {
+    return 'Código Fonte';
+}
+const title = <h1>Este é o site {getCompanyName}</h1>
+
+Ex com parametro:
+function gteCompanyName(user) {
+    return `${user.firstName} ${user.lastName}`;
+}
+const user = {
+    firstName: 'Vanessa',
+    lastName: 'Weber'
+};
+const title = <h1>Olá, {getFullName(user)}</h1>
+
+
+Estados(States) - é um objeto JS que guarda os dados de um component e determina seu comportamneto, de uma lista de itens por exemplo. Quando um estado é atualizado o component é re-renderizado.
+
+Para declarar um estado em um component de classe:
+constructor(props) {
+    super(props);
+    this.state = {
+        count 0
+    }
+}
+Para manipular um component em um component de classe
+incrementCount() {
+    this.setState((state) => {
+        return {count: state.count} + 1}
+    });
+}
+
+Para declarar um estado em um component funcional:
+import React, { useState } from 'react'; //temos que importar o useState,  O useState nos permite criar estados em um componente criado a partir de uma função
+const [count, serCount] = useState(0)
+
+Para manipular um component em um component funcional:
+setCount(count + 1)
+
+
+O que é um Lifecicle
+É o ciclo  de vida de um component, onde ele é inserido no DOM, atualizado e removido
+
+Você pode monitora-os ou manipula-los durante 3 fases:
+Mounting - quando um elemento é colocado no DOM
+Updating - quando um componente é atualizado (ocorre sempre que ocorre uma mudança no estado ou propriedade de um component)
+Unmounting - quando um component é removido de do DOM
