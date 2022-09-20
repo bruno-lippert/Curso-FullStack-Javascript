@@ -115,3 +115,46 @@ Você pode monitora-os ou manipula-los durante 3 fases:
 Mounting - quando um elemento é colocado no DOM
 Updating - quando um componente é atualizado (ocorre sempre que ocorre uma mudança no estado ou propriedade de um component)
 Unmounting - quando um component é removido de do DOM
+
+
+Hooks
+são uma forma de usarmos state, lifecycle e compartilharmos lógica em components funcionais
+
+Exemplo de component com Hook de state:
+import React, { useState } from 'react';
+
+function Example() {
+    const [count, setCount] = useState(0);
+
+    return (
+        <div>
+            <p>You clicked {count} times</p>
+            <button onClick={() => setCount(count + 1)}>
+                Click me
+            </button>
+        </div>
+    );
+}
+
+Exemplo de component com Hook associado a lifecycle:
+import React, { useState, useEffect } from 'react';
+
+function Example() {
+    const [count, setCount] = useState(0);
+
+    // Similar ao componentDidMount and componentDidUpdate
+    useEffect(() => {
+        //atualize o título do documento usando a API do navegador
+        document.title = `You clicked ${count} times`;
+    });
+    
+    return (
+        <div>
+            <p>You clicked {count} times</p>
+            <button onClick={() => setCount(count + 1)}>
+                Click me
+            </button>
+        </div>
+    );
+}
+
