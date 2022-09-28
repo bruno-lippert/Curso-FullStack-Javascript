@@ -7,11 +7,16 @@ function App() {
     { titulo: "Título 1", sub: "Subtítulo 1"},
     { titulo: "Título 2", sub: "Subtítulo 2"}        
   ];
+
+  function message(){
+    console.log('Olá')
+  }
   return (
     <div>
-      {noticias.map((noticia) => (
-        <Item titulo={noticia.titulo} sub={noticia.sub}/>
+      {noticias.map((noticia, key) => (
+        <Item key={key} titulo={noticia.titulo} sub={noticia.sub} message={message}/>
       ))}
+      
     </div>
   );
 }
