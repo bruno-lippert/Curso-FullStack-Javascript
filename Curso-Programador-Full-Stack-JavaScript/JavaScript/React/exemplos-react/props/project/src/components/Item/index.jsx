@@ -1,5 +1,5 @@
 import React from 'react';
-import './Item.css';
+import './index.css';
 
 export default function Item(props) {
   return (
