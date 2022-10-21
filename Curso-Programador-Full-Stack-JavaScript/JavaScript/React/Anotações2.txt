@@ -1,0 +1,14 @@
+Rotas- para criar uma rota, devemos usar um pacote externo chamado React Router DOM
+Comando: npm install react-router-dom
+Depois no app fazer a estrutura:
+ <BrowserRouter>
+      <Routes>
+        <Route path='' element={<News/>}/>
+        <Route path='/counter' element={<Counter/>}/>
+      </Routes>
+    </BrowserRouter>
+
+Para cada rota botar o caminho dela, com o 'path'
+
+Todo componente tem 3 estados:
+Pode estar sendo montado, ele pode ser atualizado ou ele pode ser desmontado

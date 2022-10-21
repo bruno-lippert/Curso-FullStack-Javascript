@@ -4,6 +4,7 @@ import { useState } from 'react'
 
 function App() {
   const [contador, setContador] = useState(0)
+  
   function incrementar() {
     setContador(contador+1)
   }

@@ -31,7 +31,7 @@ const Planet = (props) => {
         }
         return (
             <div onClick={() => props.clickOnPlanet(props.name)}>
-                {props.title}
+                <h3>{props.name}</h3>
                 <DescriptionWithLink
                     description={props.description}
                     link={props.link}

@@ -1,5 +1,6 @@
 import React, { Fragment, useState, useEffect } from 'react';
 import Planet from './planet';
+import Form from './form';
 
 const clickOnPlanet = (name) => {
     alert(`Um click no planeta ${name}`)
@@ -28,27 +29,29 @@ const Planets = () => {
             setPlanets(data['planets'])
         })
     }, [])//colocar dentro do array para rodar toda vez que um estado(o q vai dentro do array) for atualizado, se estiver vazio vai renderizar só uma vez, quando é montado
-    
 
-    
+    // const removeLast = () => {
+    //     let new_planets = [...planets]; //o operador spread(...), extrai todas as propriedades de planets
+    //     new_planets.pop()
+    //     setPlanets(new_planets)
+    // }
 
-    const removeLast = () => {
-        let new_planets = [...planets]; //o operador spread(...), extrai todas as propriedades de planets
-        new_planets.pop()
-        setPlanets(new_planets)
+    // const duplicateLastPlanet = () => {
+    //     let last_planet = planets[planets.length - 1];
+    //     setPlanets(...planets, last_planet);
+    // }
+    const addPlanet = (new_planet) => {
+        setPlanets([...planets, new_planet])
     }
-
-    const duplicateLastPlanet = () => {
-        let last_planet = planets[planets.length - 1];
-        setPlanets(...planets, last_planet);
-    }
-
 
     return (
         <Fragment>
             <h3>Planet List</h3>
-            <button onClick={removeLast}>Remove last</button>
-            <button onClick={duplicateLastPlanet}>Duplicate last</button>
+            <hr/>
+            <Form addPlanet={addPlanet}/>
+            <hr/>
+            {/* <button onClick={removeLast}>Remove last</button>
+            <button onClick={duplicateLastPlanet}>Duplicate last</button> */}
             {planets.map((planet, index) =>
                 <Planet
                     id={planet.id}
@@ -66,8 +69,5 @@ const Planets = () => {
     )
 
 }
-
-
-
 
 export default Planets;
